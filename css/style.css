@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto:wght@900&display=swap');
+/* reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+nav a, .navbar-brand {
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-links a, .copyright {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+.container{
+	padding: 10px 30px;
+}
+.section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section h1{
+    text-align: center;
+    font-size: 30px;
+}
+/*global styles*/
+.mt20{margin-top: 20px;}
+
+/* navbar styles */
+header{
+	border-bottom: 1px solid #333;
+}
+nav{display: flex;
+	gap:30px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: #e44d26;
+}
+
+.collapse{
+	margin-left: auto;
+}
+
+.navbar .navbar-brand{
+    font-size: 25px;
+    color: #763704;
+    font-weight: 900;
+}
+
+/*hero Styles*/
+
+.hero{
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.hero img{
+    width: 100%;
+}
+
+/*intro styles*/
+#intro{
+    text-align: center;
+}
+
+/*menu styles*/
+.card-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-container h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card-container h3 {
+    color: #555;
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    width: 48%;
+}
+p span{
+    font-size: 20px;
+}
+p span.left {
+    font-weight: bold;
+}
+
+p span.right {
+    float: right;
+    font-weight: bold;
+    color: #e44d26;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+/*drinks styles*/
+
+#drinks .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#drinks .col-md-4 {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*contact-us styles*/
+.form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+/* footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #e44d26; 
+}
+.copyright {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* responsive styles */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #drinks .row {
+        grid-template-columns: 1fr;
+    }
+}
